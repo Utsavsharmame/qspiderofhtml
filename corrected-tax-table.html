@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Bracket Table - Corrected Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .tax-table-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+        
+        thead {
+            background-color: #2c3e50;
+            color: white;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tbody tr:hover {
+            background-color: #e8f4f8;
+        }
+        
+        .amount {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+        
+        .rate-cell {
+            vertical-align: middle;
+            font-weight: bold;
+            background-color: #fff3cd;
+        }
+        
+        @media (max-width: 600px) {
+            table {
+                font-size: 12px;
+            }
+            
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tax-table-container">
+        <h1>Income Tax Brackets</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Net Taxable Income</th>
+                    <th rowspan="7">Tax Rate</th>
+                </tr>
+                <tr>
+                    <th>Over</th>
+                    <th>But Not Over</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="amount">₱0</td>
+                    <td class="amount">₱250,000</td>
+                    <td class="rate-cell" rowspan="6">
+                        0%<br><br>
+                        15%<br><br>
+                        20%<br><br>
+                        25%<br><br>
+                        30%<br><br>
+                        35%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="amount">₱250,000</td>
+                    <td class="amount">₱400,000</td>
+                </tr>
+                <tr>
+                    <td class="amount">₱400,000</td>
+                    <td class="amount">₱800,000</td>
+                </tr>
+                <tr>
+                    <td class="amount">₱800,000</td>
+                    <td class="amount">₱2,000,000</td>
+                </tr>
+                <tr>
+                    <td class="amount">₱2,000,000</td>
+                    <td class="amount">₱8,000,000</td>
+                </tr>
+                <tr>
+                    <td class="amount">₱8,000,000</td>
+                    <td class="amount">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

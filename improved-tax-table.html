@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Tax Bracket Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .tax-table-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+        
+        thead {
+            background-color: #2c3e50;
+            color: white;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tbody tr:hover {
+            background-color: #e8f4f8;
+        }
+        
+        .amount {
+            text-align: right;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+        
+        .rate {
+            text-align: left;
+            font-size: 13px;
+        }
+        
+        @media (max-width: 600px) {
+            table {
+                font-size: 12px;
+            }
+            
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tax-table-container">
+        <h1>2024 Income Tax Brackets</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Net Taxable Income Range</th>
+                    <th>Tax Calculation</th>
+                </tr>
+                <tr>
+                    <th>Over</th>
+                    <th>But Not Over</th>
+                    <th>Tax Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="amount">₱0</td>
+                    <td class="amount">₱250,000</td>
+                    <td class="rate">0%</td>
+                </tr>
+                <tr>
+                    <td class="amount">₱250,000</td>
+                    <td class="amount">₱400,000</td>
+                    <td class="rate">15% of excess over ₱250,000</td>
+                </tr>
+                <tr>
+                    <td class="amount">₱400,000</td>
+                    <td class="amount">₱800,000</td>
+                    <td class="rate">₱22,500 + 20% of excess over ₱400,000</td>
+                </tr>
+                <tr>
+                    <td class="amount">₱800,000</td>
+                    <td class="amount">₱2,000,000</td>
+                    <td class="rate">₱102,500 + 25% of excess over ₱800,000</td>
+                </tr>
+                <tr>
+                    <td class="amount">₱2,000,000</td>
+                    <td class="amount">₱8,000,000</td>
+                    <td class="rate">₱402,500 + 30% of excess over ₱2,000,000</td>
+                </tr>
+                <tr>
+                    <td class="amount">₱8,000,000</td>
+                    <td class="amount">-</td>
+                    <td class="rate">₱2,202,500 + 35% of excess over ₱8,000,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
