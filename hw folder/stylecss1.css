@@ -1,0 +1,113 @@
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+            background-color: white;
+        }
+
+        .navbar {
+            background-color: #b3e0ff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 25px; /* curve of the navbar */
+        }
+
+        .logo {
+            border: 2px solid #0066cc;
+            padding: 10px 25px;
+            border-radius: 10px;
+            color: #0066cc;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            background-color: #b3e0ff;
+            border-radius: 20px;
+            padding: 5px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-item {
+            color: #0066cc;
+            padding: 8px 25px;
+            border: 2px solid #0066cc;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+
+
+
+              /* Course Cards Container */
+        .course-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+
+
+
+
+          /* Course Card Styles */
+        .course-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .course-image {
+            width: 100%;
+            height: 200px;
+            background-color: #0066cc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .course-details {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .course-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .course-price {
+            color: #666;
+        }
+
+        .course-rating {
+            color: gold;
+        }
+
+        .view-more {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            text-decoration: none;
+            margin: 10px 15px;
+            border-radius: 4px;
+        }

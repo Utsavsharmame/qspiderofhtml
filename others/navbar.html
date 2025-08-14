@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+            background-color: white;
+        }
+
+        .navbar {
+            background-color: #b3e0ff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 25px;
+        }
+
+        .logo {
+            border: 2px solid #0066cc;
+            padding: 10px 25px;
+            border-radius: 10px;
+            color: #0066cc;
+            font-size: 18px;
+        }
+
+        .nav-menu {
+            background-color: #b3e0ff;
+            border-radius: 20px;
+            padding: 5px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #0066cc;
+            padding: 8px 25px;
+            border: 2px solid #0066cc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">logo</div>
+        <div class="nav-menu">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">contact</a>
+            <a href="#" class="nav-link">Login</a>
+        </div>
+    </nav>
+</body>
+</html>

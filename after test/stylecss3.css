@@ -1,0 +1,54 @@
+.parent{
+    height:600px;
+    width:100%;
+    border:2px solid   red;
+    display:flex;                 /*  align all the child in the single row */
+    align-items:center;             /*  along  with the y-axis */
+    justify-content: center;                 /* along with the x axis */
+    gap:30%;                         /* to give the spaces between child*/
+
+}
+
+.child1{
+ height:200px;
+ width:30%;
+ border:2px solid green;
+
+
+}
+
+.child2{
+     height:200px;
+ width:80%;
+ border:2px solid green;
+
+
+}
+
+
+.child3{
+    height:100px;
+    width:20%;
+    border:2px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+.child4{
+       
+    height:100px;
+    width:20%;
+    border:2px solid blue;
+}
+.child5{
+    height:100px;
+    width:20%;
+    border:2px solid yellow;
+}
+.child6{
+    height:100px;
+    width:20%;
+    border:2px solid blue;
+}
